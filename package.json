@@ -1,0 +1,19 @@
+{
+    "name": "smartparse-monorepo",
+    "private": true,
+    "packageManager": "bun@1.2.4",
+    "workspaces": ["packages/*"],
+    "scripts": {
+      "build": "bun run --filter './packages/*' build",
+      "lint": "tsc --build tsconfig.json",
+      "changeset": "changeset",
+      "version": "changeset version",
+      "release": "bun run build && changeset publish"
+    },
+    "devDependencies": {
+      "@changesets/cli": "^2.29.4",
+      "@types/bun": "latest",
+      "tsup": "^8.5.0",
+      "typescript": "^5"
+    }
+  }
