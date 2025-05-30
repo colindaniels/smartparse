@@ -1,5 +1,0 @@
----
-"smartparse-ai": patch
----
-
-namechange
